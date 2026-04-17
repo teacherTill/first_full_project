@@ -19,6 +19,10 @@ p {
   max-width: 1920px;
   width: 100%;
   margin: 0 auto;
+  padding: 160px 325px;
+}
+.header {
+  padding: 0px;
 }
 h1,
 h2,
@@ -54,7 +58,7 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding: 230px 312px;
+
   position: relative;
 }
 .intro h1 {
@@ -138,7 +142,6 @@ header {
 
 .tickets_wrapper {
   background-color: rgba(251, 219, 60, 1);
-  padding: 210px 312px;
 }
 .ticket_card {
   width: 100%;
@@ -212,6 +215,41 @@ header {
 .ticket_body-right > h3 {
   font-size: 3em;
   color: rgba(255, 255, 255, 1);
+}
+
+.faqs {
+}
+.faqs_list {
+}
+.accordion {
+  background-color: rgba(255, 255, 255, 0.4);
+  max-width: 1270px;
+  width: 100%;
+  transition: all 0.2ms ease;
+  padding: 50px;
+  border-radius: 20px;
+  border: 1px solid black;
+}
+.accordion_top {
+  display: flex;
+  justify-content: space-between;
+}
+.accordion_top img {
+  transform: rotate(180deg);
+  transition: all 0.3s ease;
+}
+.accordion_bottom {
+  padding-top: 0px;
+  overflow: hidden;
+  transition: all 0.2s ease;
+  max-height: 0;
+}
+.accordion_active img {
+  transform: rotate(0deg);
+}
+.accordion_active .accordion_bottom {
+  padding-top: 23px;
+  max-height: 600px;
 }
 @media (max-width: 1440px) {
   .container {
